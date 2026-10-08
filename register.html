@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <title>Daftar | PisangKita</title>
+
+    <link rel="stylesheet" href="style.css?v=20261008-3">
+    <script src="app.js?v=20261008-3" defer></script>
+</head>
+
+<body>
+
+    <header class="simple-header">
+        <a href="index.html" class="logo">PisangKita</a>
+        <a href="index.html" class="btn btn-secondary">Kembali ke Beranda</a>
+    </header>
+
+    <main class="login-page">
+
+        <section class="login-card">
+
+            <h1>Daftar Akun</h1>
+            <p class="login-description">Buat akun PisangKita untuk mulai memesan camilan favoritmu.</p>
+
+            <form data-form="register" action="#" method="post" novalidate>
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        autocomplete="name"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+                    <p class="field-error" data-error-for="nama" hidden></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="nama@email.com"
+                        required
+                    >
+                    <p class="field-error" data-error-for="email" hidden></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            autocomplete="new-password"
+                            placeholder="Minimal 6 karakter"
+                            minlength="6"
+                            required
+                        >
+                        <button type="button" class="password-toggle" aria-controls="password" aria-pressed="false">Tampilkan</button>
+                    </div>
+                    <p class="field-error" data-error-for="password" hidden></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="konfirmasi">Ulangi Kata Sandi</label>
+                    <input
+                        type="password"
+                        id="konfirmasi"
+                        name="konfirmasi"
+                        autocomplete="new-password"
+                        placeholder="Ketik ulang kata sandi"
+                        required
+                    >
+                    <p class="field-error" data-error-for="konfirmasi" hidden></p>
+                </div>
+
+                <p class="login-status" aria-live="polite" hidden></p>
+
+                <button type="submit" class="btn btn-primary login-submit">Daftar</button>
+
+            </form>
+
+            <p class="login-register">
+                Sudah punya akun? <a href="login.html" class="login-link">Masuk</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer footer-white">
+        <strong>PisangKita</strong>
+        <p>© 2026 PisangKita • UMKM Lokal</p>
+    </footer>
+
+</body>
+</html>

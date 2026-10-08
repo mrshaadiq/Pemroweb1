@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hubungi Kami | PisangKita</title>
+
+    <link rel="stylesheet" href="style.css?v=20261008-3">
+    <script src="app.js?v=20261008-3" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="simple-header">
+
+        <a href="index.html" class="logo">
+            PisangKita
+        </a>
+
+        <a href="index.html" class="btn btn-secondary">
+            Kembali ke Beranda
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <main class="form-page contact-page">
+
+        <!-- Bagian kiri -->
+        <section class="form-intro">
+
+            <h1>Hubungi PisangKita</h1>
+
+            <p class="form-description">
+                Punya pertanyaan soal produk, stok, pengiriman,
+                atau mau kerja sama? Kirim pesan lewat form ini.
+            </p>
+
+
+            <div class="info-card contact-info">
+
+                <h2>
+                    Kontak UMKM
+                </h2>
+
+                <p>
+                    WhatsApp: 0812-3456-7890
+                </p>
+
+                <p>
+                    Instagram: @pisangkita
+                </p>
+
+                <p>
+                    Jam layanan: 09.00–20.00
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Bagian kanan -->
+        <section class="form-card contact-form">
+
+            <h2>Kirim Pesan</h2>
+
+
+            <form data-form="contact" action="https://wa.me/6281234567890" method="get">
+                <noscript><p>Aktifkan JavaScript untuk menyiapkan pesan dari formulir, atau <a href="https://wa.me/6281234567890">hubungi kami langsung melalui WhatsApp</a>.</p></noscript>
+
+                <div class="form-group">
+
+                    <label for="nama">
+                        Nama
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        required
+                        name="nama"
+                        placeholder="Masukkan nama"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contact">
+                        Email / WhatsApp
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contact"
+                        required
+                        name="contact"
+                        placeholder="Email / nomor WhatsApp"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subjek">
+                        Subjek
+                    </label>
+
+                    <select
+                        id="subjek"
+                        required
+                        name="subjek"
+                    >
+
+                        <option value="" selected disabled>
+                            Pilih subjek
+                        </option>
+
+                        <option value="produk">
+                            Pertanyaan Produk
+                        </option>
+
+                        <option value="kerja-sama">
+                            Kerja Sama
+                        </option>
+
+                        <option value="lainnya">
+                            Lainnya
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="pesan">
+                        Pesan
+                    </label>
+
+                    <textarea
+                        id="pesan"
+                        required
+                        name="pesan"
+                        placeholder="Tulis pesan kamu di sini"
+                    ></textarea>
+
+                </div>
+
+
+                <p class="form-note">Pesan akan dibuka di WhatsApp untuk diperiksa dan dikirim.</p>
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Lanjut ke WhatsApp
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn btn-secondary"
+                    >
+                        Batal
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer footer-white">
+
+        <strong>
+            PisangKita
+        </strong>
+
+        <p>
+            © 2026 PisangKita • UMKM Lokal
+        </p>
+
+    </footer>
+
+</body>
+</html>

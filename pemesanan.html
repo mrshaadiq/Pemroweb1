@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Pemesanan | PisangKita</title>
+
+    <link rel="stylesheet" href="style.css?v=20261008-3">
+    <script src="app.js?v=20261008-3" defer></script>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="simple-header">
+
+        <a href="index.html" class="logo">
+            PisangKita
+        </a>
+
+        <a href="index.html" class="btn btn-secondary">
+            Kembali ke Beranda
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         FORM PEMESANAN
+    ========================== -->
+    <main class="form-page">
+
+        <!-- Kiri -->
+        <section class="form-intro">
+
+            <h1>Form Pemesanan</h1>
+
+            <p class="form-description">
+                Isi data di samping untuk memesan keripik PisangKita.
+                Setelah dikirim, pesanan bisa dilanjutkan melalui WhatsApp.
+            </p>
+
+
+            <div class="info-card">
+
+                <h2>
+                    Harga mulai Rp15.000
+                </h2>
+
+                <p>
+                    Varian: Original, Cokelat, dan Keju.
+                    Cantumkan alamat lengkap agar pesanan
+                    lebih mudah diproses.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Kanan -->
+        <section class="form-card">
+
+            <h2>Data Pemesan</h2>
+
+
+            <form data-form="order" action="https://wa.me/6281234567890" method="get">
+                <noscript><p>Aktifkan JavaScript untuk menyiapkan pesan dari formulir, atau <a href="https://wa.me/6281234567890">hubungi kami langsung melalui WhatsApp</a>.</p></noscript>
+
+                <!-- Row 1 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nama">
+                            Nama Lengkap
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            autocomplete="name"
+                            name="nama"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="whatsapp">
+                            Nomor WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="whatsapp"
+                            autocomplete="tel"
+                            pattern="[+0-9][0-9 ()-]{7,19}"
+                            title="Masukkan nomor WhatsApp yang valid, misalnya 081234567890"
+                            name="whatsapp"
+                            placeholder="Contoh: 0812xxxxxxx"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Row 2 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="rasa">
+                            Pilih Rasa
+                        </label>
+
+                        <select id="rasa" name="rasa" required>
+
+                            <option value="" selected disabled>
+                                Pilih rasa
+                            </option>
+
+                            <option value="Original">
+                                Original
+                            </option>
+
+                            <option value="Cokelat">
+                                Cokelat
+                            </option>
+
+                            <option value="Keju">
+                                Keju
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="jumlah">
+                            Jumlah
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jumlah"
+                            name="jumlah"
+                            min="1"
+                            step="1"
+                            value="1"
+                            required
+                            placeholder="Contoh: 2 bungkus"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="alamat">
+                        Alamat Pengiriman
+                    </label>
+
+                    <textarea
+                        id="alamat"
+                        required
+                        name="alamat"
+                        placeholder="Masukkan alamat lengkap"
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="catatan">
+                        Catatan Pesanan
+                    </label>
+
+                    <textarea
+                        id="catatan"
+                        name="catatan"
+                        placeholder="Contoh: tanpa tambahan, kirim sore hari, dll."
+                    ></textarea>
+
+                </div>
+
+
+                <p class="order-summary" aria-live="polite" hidden></p>
+                <p class="form-note">Perkiraan harga produk belum termasuk ongkir. Pesan dapat diperiksa sebelum dikirim di WhatsApp.</p>
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Lanjut ke WhatsApp
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="btn btn-secondary"
+                    >
+                        Batal
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer footer-white">
+
+        <strong>
+            PisangKita
+        </strong>
+
+        <p>
+            © 2026 PisangKita • UMKM Lokal
+        </p>
+
+    </footer>
+
+</body>
+</html>
